@@ -1,8 +1,20 @@
-{% set title = "Home" %}
-{% set bodyClass = "is-home" %}
+<!DOCTYPE html>
+<html lang="en">
 
-{% extends "_html/_base/_layouts/_default.html" %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <meta name="description" content="description site">
+    <link rel="stylesheet" type="text/css" href="assets/css/app.min.css">
+</head>
 
-{% block content %}
-    <h1>Content</h1>
-{% endblock %}
+<body>
+    <div class="page-wrapper" id="pageWrapper">
+        {% include "_html/_base/_includes/_header/_header.html" %}
+        {% include "_html/_base/_includes/_footer/_footer.html" %}
+    </div>
+    <script src="assets/js/app.min.js"></script>
+</body>
+
+</html>
